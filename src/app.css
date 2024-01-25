@@ -27,7 +27,7 @@ main.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 main div.color-container  h1{
@@ -40,21 +40,18 @@ main div.color-container  h1{
     justify-content: center;
     align-items: center;
     padding: 0.8rem 0.5rem;
-    background-color: black;
     border-radius: 4px;
+    background-color: transparent;
+    border: none;
 }
 
-@media(prefers-color-scheme: dark){
-    .card-container {
-        background-color: white;
-    }
-}
+
 
 
 .card-color {
     width: 4rem;
     height: 4rem;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .group {
