@@ -1,12 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import '../app.css';
-  
-  import {setImage} from '$lib/utility/themeFunctions';
+
+	import { setImage } from '$lib/utility/themeFunctions';
 
 	let img: HTMLImageElement | null;
-
-	
 
 	onMount(() => {
 		img = document.querySelector('img');
@@ -34,5 +32,25 @@
 		height: 200px;
 		object-fit: cover;
 	}
-</style>
 
+	@media only screen and (max-width: 768px) {
+		.group-element img {
+			width: 120px;
+			height: 120px;
+		}
+	}
+
+	@media only screen and (min-width: 810px) and (orientation: landscape) {
+		.group-element img {
+			width: 100px;
+			height: 100px;
+		}
+	}
+
+	@media only screen and (min-width: 1400px) {
+		.group-element img {
+			width: 150px;
+			height: 150px;
+		}
+	}
+</style>
